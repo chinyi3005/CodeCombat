@@ -1,3 +1,6 @@
+// Level：Forest Shadow
+// https://codecombat.com/play/level/forest-shadow
+
 // Big ogres can't see you in the forest.
 // Kill only the small ogres in the forest.
 // Collect coins and gems only.

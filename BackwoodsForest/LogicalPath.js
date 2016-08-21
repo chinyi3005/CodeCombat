@@ -1,3 +1,6 @@
+// Level: Logical Path
+// https://codecombat.com/play/level/logical-path
+
 // Get two secret true/false values from the wizard.
 hero.moveXY(14, 24);
 var secretA = hero.findNearestFriend().getSecretA();
