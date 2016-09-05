@@ -1,8 +1,8 @@
-// Uh oh, a stampede! Use your cunning to make it to the oasis.
-
 // Level: Basin Stampede
 // https://codecombat.com/play/level/basin-stampede
 
+// Uh oh, a stampede! Use your cunning to make it to the oasis.
+// SOLUTION 1
 while(true) {
     var enemy = hero.findNearestEnemy();
     var xPos = hero.pos.x + 5;
@@ -17,5 +17,32 @@ while(true) {
             yPos += 1;
         }
     }
+    hero.moveXY(xPos, yPos);
+}
+
+
+// SOLUTION 2
+while(true) {
+    var enemy = hero.findNearestEnemy();
+    var xPos = hero.pos.x + 5;
+    var yPos = 17;
+    switch (enemy.pos.y > hero.pos.y) {
+        case true: yPos -= 1;
+        break;
+        case false: yPos += 1;
+        break;
+    }
+    hero.moveXY(xPos, yPos);
+}
+
+
+// SOLUTION 3
+// Uh oh, a stampede! Use your cunning to make it to the oasis.
+
+while(true) {
+    var enemy = hero.findNearestEnemy();
+    var xPos = hero.pos.x + 5;
+    var yPos = 17;
+    enemy.pos.y > hero.pos.y ? yPos -= 1 : yPos += 1;
     hero.moveXY(xPos, yPos);
 }
