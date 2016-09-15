@@ -47,13 +47,11 @@ hero.castOrAttack = function(enemy) {
 
 while(true) {
     var enemy = hero.findNearestEnemy();
-    // If it's the first 10 seconds, fight.
     if (hero.now() < 10 || hero.now() > 35) {
         if (enemy) {
             hero.castOrAttack(enemy);
         }
     }
-    // Else, if it's the first 30 seconds, collect coins.
     else if (hero.now() <= 35) {
         var coin = hero.findNearestItem();
         if (coin) {
